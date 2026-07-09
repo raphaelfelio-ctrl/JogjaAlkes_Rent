@@ -1,12 +1,12 @@
 export const products = [
   {
     id: "bed-manual-2-crank",
-    name: "Bed Pasien Manual 2 Crank",
+    name: "Bed Pasien Manual 2 Crank + Matras (Premium)",
     category: "Tempat Tidur",
     price: 350000,
     priceUnit: "bulan",
     available: true,
-    image: "/images/Ranjang_deluxe_2Engkol.png",
+    image: "/images/Bed_2crank_manual.jpeg",
     summary: "Tempat tidur perawatan dasar dengan pengaturan punggung dan kaki manual.",
     specifications: [
       { label: "Tujuan", value: "Menyediakan tempat tidur perawatan dasar dengan fungsi pengaturan posisi punggung dan kaki secara manual." },
@@ -18,12 +18,12 @@ export const products = [
   },
   {
     id: "bed-manual-3-crank",
-    name: "Bed Pasien Manual 3 Crank",
+    name: "Bed Pasien Manual 3 Crank + Matras (Premium)",
     category: "Tempat Tidur",
     price: 450000,
     priceUnit: "bulan",
     available: true,
-    image: "/images/Ranjang_deluxe_3Engkol.png",
+    image: "/images/Bed_3crank_manual.jpeg",
     summary: "Tempat tidur dengan pengaturan punggung, kaki, dan tinggi rendah secara manual.",
     specifications: [
       { label: "Tujuan", value: "Memberikan fleksibilitas perawatan lebih tinggi, terutama untuk pasien dengan mobilitas sangat terbatas atau yang memerlukan posisi perawatan spesifik." },
@@ -40,7 +40,7 @@ export const products = [
     price: 800000,
     priceUnit: "bulan",
     available: true,
-    image: "/images/Ranjang_electric.png",
+    image: "/images/Bed_electric.jpeg",
     summary: "Tempat tidur canggih dengan pengaturan posisi pasien secara elektrik.",
     specifications: [
       { label: "Tujuan", value: "Memberikan kenyamanan dan kemudahan maksimal dalam pengaturan posisi pasien, ideal untuk perawatan intensif atau pasien dengan keterbatasan gerak total." },
@@ -57,7 +57,7 @@ export const products = [
     price: 150000,
     priceUnit: "bulan",
     available: true,
-    image: "/images/Standart_antiDecubitus.png",
+    image: "/images/Kasur_decubitus.jpeg",
     summary: "Mencegah luka baring dengan sel udara yang mengembang secara bergantian.",
     specifications: [
       { label: "Tujuan", value: "Mencegah dan membantu penyembuhan luka tekan (luka baring/decubitus) pada pasien yang terbaring lama." },
@@ -74,7 +74,7 @@ export const products = [
     price: 150000,
     priceUnit: "bulan",
     available: true,
-    image: "/images/Kursi_Roda_Standart.png",
+    image: "/images/Kursi_roda_biasa.jpeg",
     summary: "Kursi roda standar yang bisa dilipat untuk keperluan mobilitas dasar.",
     specifications: [
       { label: "Tujuan", value: "Alat mobilitas dasar untuk membantu pasien berpindah tempat di dalam atau luar ruangan." },
@@ -89,7 +89,7 @@ export const products = [
     price: 250000,
     priceUnit: "bulan",
     available: true,
-    image: "/images/Kursi_roda_multiguna.png",
+    image: "/images/Kursi_roda_tidur.jpeg",
     summary: "Kursi roda serbaguna dengan sandaran rebah (reclining) dan fasilitas pispot.",
     specifications: [
       { label: "Tujuan", value: "Memenuhi kebutuhan pasien dengan mobilitas sangat terbatas yang memerlukan posisi berbaring (reclining) serta kebutuhan buang air besar/kecil tanpa harus berpindah." },
@@ -105,7 +105,7 @@ export const products = [
     price: 100000,
     priceUnit: "bulan",
     available: true,
-    image: "/images/Nebulizer_Omron.png",
+    image: "/images/Nebulizer.jpeg",
     summary: "Alat pengubah obat cair menjadi uap untuk pasien gangguan pernapasan.",
     specifications: [
       { label: "Tujuan", value: "Mengubah obat cair menjadi uap (aerosol) untuk membantu pasien dengan gangguan pernapasan (asma, bronkitis, dll.) menghirup obat dengan lebih efektif." },
@@ -121,7 +121,7 @@ export const products = [
     price: 100000,
     priceUnit: "bulan",
     available: true,
-    image: "/images/Oksigen_1M3.png",
+    image: "/images/Tabung_Oksigen_kecil.jpeg",
     summary: "Penyediaan oksigen portabel untuk keperluan darurat/rutin (6-8 kg).",
     specifications: [
       { label: "Tujuan", value: "Penyediaan oksigen portabel untuk pasien dengan kebutuhan oksigen tambahan, baik untuk keperluan darurat maupun perawatan rutin di rumah." },
@@ -136,7 +136,7 @@ export const products = [
     price: 150000,
     priceUnit: "bulan",
     available: true,
-    image: "/images/Oksigen_6M3.png",
+    image: "/images/Tabung_Oksigen_besar.jpeg",
     summary: "Tabung oksigen berkapasitas besar (6-7 m³) untuk pemakaian jangka panjang.",
     specifications: [
       { label: "Tujuan", value: "Memenuhi kebutuhan oksigen dengan kapasitas besar untuk pemakaian jangka panjang atau untuk pasien dengan kebutuhan oksigen tinggi, serta sebagai cadangan utama." },
