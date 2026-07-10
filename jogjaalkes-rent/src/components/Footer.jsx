@@ -23,7 +23,7 @@ const Footer = () => {
         <div>
           <h4 className="text-lg font-semibold mb-4 text-gray-200">Kontak Kami</h4>
           <ul className="space-y-2 text-sm text-gray-400">
-            <li>WhatsApp: 0819-0417-0090</li>
+            <li>WhatsApp: 0823-2620-1067</li>
             <li>Email: pt.greenjayaabadi@gmail.com</li>
             <li>Layanan 24 Jam Non-Stop</li>
           </ul>

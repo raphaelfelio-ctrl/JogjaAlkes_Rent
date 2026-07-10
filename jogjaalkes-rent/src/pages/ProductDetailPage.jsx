@@ -26,7 +26,7 @@ const ProductDetailPage = () => {
 
   const handleWhatsApp = () => {
     const text = `Halo JogjaAlkes Rent, saya tertarik untuk menyewa ${product.name}. Mohon info ketersediaannya.`;
-    window.open(`https://wa.me/6281904170090?text=${encodeURIComponent(text)}`, '_blank');
+    window.open(`https://wa.me/6282326201067?text=${encodeURIComponent(text)}`, '_blank');
   };
 
   return (
