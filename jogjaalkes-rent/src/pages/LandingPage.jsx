@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link, useNavigate } from 'react-router-dom';
-import { ShieldCheck, Clock, CheckCircle2, ArrowRight, Stethoscope } from 'lucide-react';
+import { ShieldCheck, Clock, CheckCircle2, ArrowRight, Stethoscope, Building, Award, Activity, PieChart } from 'lucide-react';
 import { products } from '../data/products';
 import ProductCard from '../components/ProductCard';
 
@@ -85,6 +85,50 @@ const LandingPage = () => {
                 <h3 className="text-xl font-bold text-gray-900">{category}</h3>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Layanan Utama */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900">Layanan Utama Kami</h2>
+            <div className="w-24 h-1 bg-teal-500 mx-auto mt-4 rounded-full"></div>
+            <p className="mt-4 text-gray-600 max-w-2xl mx-auto">Kami turut mendukung pertumbuhan dan tata kelola fasilitas kesehatan melalui layanan konsultasi profesional.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <motion.div whileHover={{ y: -5 }} className="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-lg transition-all cursor-default">
+              <div className="w-14 h-14 bg-teal-100 text-teal-600 rounded-xl flex items-center justify-center mb-6">
+                <Building className="w-7 h-7" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">1. Perencanaan & Studi Kelayakan</h3>
+              <p className="text-gray-600"><strong>(Feasibility Study)</strong>: Analisis pasar, perizinan, dan desain tata ruang RS.</p>
+            </motion.div>
+            
+            <motion.div whileHover={{ y: -5 }} className="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-lg transition-all cursor-default">
+              <div className="w-14 h-14 bg-teal-100 text-teal-600 rounded-xl flex items-center justify-center mb-6">
+                <Award className="w-7 h-7" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">2. Pendampingan Akreditasi</h3>
+              <p className="text-gray-600"><strong>(STARKES / JCI)</strong>: Persiapan dokumen, simulasi audit, dan pelatihan tata kelola.</p>
+            </motion.div>
+            
+            <motion.div whileHover={{ y: -5 }} className="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-lg transition-all cursor-default">
+              <div className="w-14 h-14 bg-teal-100 text-teal-600 rounded-xl flex items-center justify-center mb-6">
+                <Activity className="w-7 h-7" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">3. Manajemen Operasional & Mutu</h3>
+              <p className="text-gray-600">Digitalisasi RS (SIMRS), efisiensi alur kerja, dan manajemen risiko.</p>
+            </motion.div>
+            
+            <motion.div whileHover={{ y: -5 }} className="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-lg transition-all cursor-default">
+              <div className="w-14 h-14 bg-teal-100 text-teal-600 rounded-xl flex items-center justify-center mb-6">
+                <PieChart className="w-7 h-7" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">4. Manajemen Keuangan & Klaim</h3>
+              <p className="text-gray-600">Optimalisasi klaim asuransi/BPJS, audit keuangan, dan penghematan biaya operasional.</p>
+            </motion.div>
           </div>
         </div>
       </section>

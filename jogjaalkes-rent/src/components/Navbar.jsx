@@ -25,6 +25,8 @@ const Navbar = () => {
           <div className="hidden md:flex space-x-8">
             <Link to="/" className={`font-medium transition-colors ${isActive('/') ? 'text-primary-600' : 'text-gray-600 hover:text-primary-600'}`}>Beranda</Link>
             <Link to="/katalog" className={`font-medium transition-colors ${isActive('/katalog') ? 'text-primary-600' : 'text-gray-600 hover:text-primary-600'}`}>Katalog Produk</Link>
+            <Link to="/layanan" className={`font-medium transition-colors ${isActive('/layanan') ? 'text-primary-600' : 'text-gray-600 hover:text-primary-600'}`}>Layanan</Link>
+            <Link to="/tentang-kami" className={`font-medium transition-colors ${isActive('/tentang-kami') ? 'text-primary-600' : 'text-gray-600 hover:text-primary-600'}`}>Tentang Kami</Link>
           </div>
 
           <div className="hidden md:block">
@@ -65,6 +67,20 @@ const Navbar = () => {
                 className={`block px-4 py-3 rounded-xl font-medium transition-colors ${isActive('/katalog') ? 'bg-primary-50 text-primary-700' : 'text-gray-700 hover:bg-gray-50'}`}
               >
                 Katalog Produk
+              </Link>
+              <Link 
+                to="/layanan" 
+                onClick={closeMenu}
+                className={`block px-4 py-3 rounded-xl font-medium transition-colors ${isActive('/layanan') ? 'bg-primary-50 text-primary-700' : 'text-gray-700 hover:bg-gray-50'}`}
+              >
+                Layanan
+              </Link>
+              <Link 
+                to="/tentang-kami" 
+                onClick={closeMenu}
+                className={`block px-4 py-3 rounded-xl font-medium transition-colors ${isActive('/tentang-kami') ? 'bg-primary-50 text-primary-700' : 'text-gray-700 hover:bg-gray-50'}`}
+              >
+                Tentang Kami
               </Link>
               <div className="pt-4 mt-2 border-t border-gray-100">
                 <Link 

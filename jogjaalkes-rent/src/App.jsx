@@ -5,6 +5,8 @@ import Footer from './components/Footer'
 import LandingPage from './pages/LandingPage'
 import CatalogPage from './pages/CatalogPage'
 import ProductDetailPage from './pages/ProductDetailPage'
+import ServicesPage from './pages/ServicesPage'
+import AboutUsPage from './pages/AboutUsPage'
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
             <Route path="/" element={<LandingPage />} />
             <Route path="/katalog" element={<CatalogPage />} />
             <Route path="/produk/:id" element={<ProductDetailPage />} />
+            <Route path="/layanan" element={<ServicesPage />} />
+            <Route path="/tentang-kami" element={<AboutUsPage />} />
           </Routes>
         </main>
         <Footer />
