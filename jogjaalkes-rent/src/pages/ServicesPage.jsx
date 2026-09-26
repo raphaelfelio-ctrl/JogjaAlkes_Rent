@@ -76,9 +76,9 @@ const ServicesPage = () => {
               <div className="bg-teal-50 p-4 rounded-2xl flex-shrink-0">
                 {service.icon}
               </div>
-              <div>
+              <div className="w-full">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">{service.title}</h3>
-                <ul className="space-y-3">
+                <ul className="space-y-3 mb-6">
                   {service.items.map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-gray-700">
                       <CheckCircle2 className="w-5 h-5 text-teal-500 mt-0.5 flex-shrink-0" />
@@ -86,6 +86,24 @@ const ServicesPage = () => {
                     </li>
                   ))}
                 </ul>
+
+                {service.title.includes("Pelatihan") && (
+                  <div className="mt-8 border-t border-gray-100 pt-6">
+                    <h4 className="text-lg font-bold text-gray-800 mb-4">Dokumentasi Pelatihan</h4>
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                      {[1, 2, 3, 4, 5, 6, 7, 8].map(num => (
+                        <div key={num} className="aspect-square rounded-xl overflow-hidden bg-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                          <img 
+                            src={`/images/pelatihan/img-${num}.jpeg`} 
+                            alt={`Dokumentasi Pelatihan ${num}`}
+                            className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                            loading="lazy"
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             </motion.div>
           ))}
