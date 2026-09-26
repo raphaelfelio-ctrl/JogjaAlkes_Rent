@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Stethoscope, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
@@ -17,8 +17,8 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           <Link to="/" className="flex items-center gap-2" onClick={closeMenu}>
-            <Stethoscope className="h-7 w-7 md:h-8 md:w-8 text-primary-500 flex-shrink-0" />
-            <span className="font-bold text-lg md:text-xl text-gray-900 tracking-tight">JogjaAlkes Rent</span>
+            <img src="/images/logo.jpeg" alt="JogjaAlkes Rent Logo" className="h-9 w-9 md:h-10 md:w-10 rounded-full object-cover flex-shrink-0" />
+            <img src="/images/nama.jpeg" alt="JogjaAlkes Rent" className="h-7 md:h-8 object-contain" />
           </Link>
 
           {/* Desktop Menu */}

@@ -6,9 +6,10 @@ const Footer = () => {
     <footer className="bg-gray-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
-          <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-            <span className="text-primary-400">JogjaAlkes</span> Rent
-          </h3>
+          <div className="flex items-center gap-3 mb-4">
+            <img src="/images/logo.jpeg" alt="Logo" className="h-10 w-10 rounded-full object-cover" />
+            <img src="/images/nama.jpeg" alt="PT Green Jaya Abadi" className="h-8 object-contain bg-white rounded-md px-2 py-1" />
+          </div>
           <p className="text-gray-400 text-sm leading-relaxed">
             Platform persewaan alat kesehatan dan rumah sakit terpercaya. Memudahkan pasien dan instansi medis menyewa alat kesehatan berkualitas tinggi secara transparan dan cepat.
           </p>
